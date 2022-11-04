@@ -6,35 +6,82 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function Dav(props) {
-  const { nodes, materials } = useGLTF("/4D JUVER.gltf");
+  const { nodes, materials } = useGLTF("/3D JEKYLL.gltf");
   return (
     <group {...props} dispose={null}>
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Sphere.geometry}
+        geometry={nodes.Plano001.geometry}
         material={materials["Material.001"]}
+        position={[-0.08, 0.17, -0.05]}
+        rotation={[0, Math.PI / 2, 0]}
       />
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes["_1_ARD-geom"].geometry}
-        material={materials._1_ARD_front}
+        geometry={nodes.Plano002.geometry}
+        material={materials["Material.001"]}
+        position={[0.07, 0.17, -0.05]}
+        rotation={[0, Math.PI / 2, 0]}
       />
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes["_1_ARD-geom_1"].geometry}
-        material={materials._1_ARD_back}
+        geometry={nodes.Plano003.geometry}
+        material={materials["Material.001"]}
+        position={[-0.08, 0.17, 0.05]}
+        rotation={[0, Math.PI / 2, 0]}
       />
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes["_1_ARD-geom_2"].geometry}
-        material={materials._1_ARD_edge}
+        geometry={nodes.Texto.geometry}
+        material={materials["Material.001"]}
+        position={[0.23, -0.03, 0.02]}
+        rotation={[Math.PI / 2, 0, -Math.PI / 2]}
+        scale={0.49}
       />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Texto001.geometry}
+        material={materials["Material.001"]}
+        position={[0.01, -0.03, 0.31]}
+        rotation={[Math.PI / 2, 0, -Math.PI / 2]}
+        scale={0.38}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Texto002.geometry}
+        material={materials["Material.001"]}
+        position={[0.22, 0.01, -0.17]}
+        rotation={[Math.PI / 2, 0, -Math.PI / 2]}
+        scale={0.52}
+      />
+      <group position={[0, -0.01, 0]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes["TQ_ARD-geom"].geometry}
+          material={materials.TQ_ARD_front}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes["TQ_ARD-geom_1"].geometry}
+          material={materials.TQ_ARD_back}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes["TQ_ARD-geom_2"].geometry}
+          material={materials.TQ_ARD_edge}
+        />
+      </group>
     </group>
   );
 }
 
-useGLTF.preload("/4D JUVER.gltf");
+useGLTF.preload("/3D JEKYLL.gltf");
