@@ -6,9 +6,345 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function Dav(props) {
-  const { nodes, materials } = useGLTF("/3D JEKYLL.gltf");
+  const { nodes, materials } = useGLTF("/5D JEKYLL.gltf");
   return (
     <group {...props} dispose={null}>
+      <group position={[0.09, 0.02, 0.15]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_1.geometry}
+          material={materials["Material.003"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_2.geometry}
+          material={materials["Material.004"]}
+        />
+      </group>
+      <group position={[0.03, 0.02, 0.15]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_1.geometry}
+          material={materials["Material.003"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_2.geometry}
+          material={materials["Material.004"]}
+        />
+      </group>
+      <group position={[-0.03, 0.02, 0.15]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_1.geometry}
+          material={materials["Material.003"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_2.geometry}
+          material={materials["Material.004"]}
+        />
+      </group>
+      <group position={[-0.09, 0.02, 0.15]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_1.geometry}
+          material={materials["Material.003"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_2.geometry}
+          material={materials["Material.004"]}
+        />
+      </group>
+      <group position={[0.09, 0.02, 0.09]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_1.geometry}
+          material={materials["Material.003"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_2.geometry}
+          material={materials["Material.004"]}
+        />
+      </group>
+      <group position={[0.03, 0.02, 0.09]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_1.geometry}
+          material={materials["Material.003"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_2.geometry}
+          material={materials["Material.004"]}
+        />
+      </group>
+      <group position={[-0.03, 0.02, 0.09]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_1.geometry}
+          material={materials["Material.003"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_2.geometry}
+          material={materials["Material.004"]}
+        />
+      </group>
+      <group position={[-0.09, 0.02, 0.09]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_1.geometry}
+          material={materials["Material.003"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_2.geometry}
+          material={materials["Material.004"]}
+        />
+      </group>
+      <group position={[0.09, 0.02, 0.03]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_1.geometry}
+          material={materials["Material.003"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_2.geometry}
+          material={materials["Material.004"]}
+        />
+      </group>
+      <group position={[0.03, 0.02, 0.03]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_1.geometry}
+          material={materials["Material.003"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_2.geometry}
+          material={materials["Material.004"]}
+        />
+      </group>
+      <group position={[-0.03, 0.02, 0.03]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_1.geometry}
+          material={materials["Material.003"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_2.geometry}
+          material={materials["Material.004"]}
+        />
+      </group>
+      <group position={[-0.09, 0.02, 0.03]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_1.geometry}
+          material={materials["Material.003"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_2.geometry}
+          material={materials["Material.004"]}
+        />
+      </group>
+      <group position={[0.09, 0.02, -0.03]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_1.geometry}
+          material={materials["Material.003"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_2.geometry}
+          material={materials["Material.004"]}
+        />
+      </group>
+      <group position={[0.03, 0.02, -0.03]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_1.geometry}
+          material={materials["Material.003"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_2.geometry}
+          material={materials["Material.004"]}
+        />
+      </group>
+      <group position={[-0.03, 0.02, -0.03]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_1.geometry}
+          material={materials["Material.003"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_2.geometry}
+          material={materials["Material.004"]}
+        />
+      </group>
+      <group position={[-0.09, 0.02, -0.03]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_1.geometry}
+          material={materials["Material.003"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_2.geometry}
+          material={materials["Material.004"]}
+        />
+      </group>
+      <group position={[0.09, 0.02, -0.09]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_1.geometry}
+          material={materials["Material.003"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_2.geometry}
+          material={materials["Material.004"]}
+        />
+      </group>
+      <group position={[0.03, 0.02, -0.09]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_1.geometry}
+          material={materials["Material.003"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_2.geometry}
+          material={materials["Material.004"]}
+        />
+      </group>
+      <group position={[-0.03, 0.02, -0.09]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_1.geometry}
+          material={materials["Material.003"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_2.geometry}
+          material={materials["Material.004"]}
+        />
+      </group>
+      <group position={[-0.09, 0.02, -0.09]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_1.geometry}
+          material={materials["Material.003"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_2.geometry}
+          material={materials["Material.004"]}
+        />
+      </group>
+      <group position={[0.09, 0.02, -0.15]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_1.geometry}
+          material={materials["Material.003"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_2.geometry}
+          material={materials["Material.004"]}
+        />
+      </group>
+      <group position={[0.03, 0.02, -0.15]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_1.geometry}
+          material={materials["Material.003"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_2.geometry}
+          material={materials["Material.004"]}
+        />
+      </group>
+      <group position={[-0.03, 0.02, -0.15]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_1.geometry}
+          material={materials["Material.003"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_2.geometry}
+          material={materials["Material.004"]}
+        />
+      </group>
+      <group position={[-0.09, 0.02, -0.15]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_1.geometry}
+          material={materials["Material.003"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder001_2.geometry}
+          material={materials["Material.004"]}
+        />
+      </group>
       <mesh
         castShadow
         receiveShadow
@@ -40,7 +376,7 @@ export function Dav(props) {
         material={materials["Material.001"]}
         position={[0.23, -0.03, 0.02]}
         rotation={[Math.PI / 2, 0, -Math.PI / 2]}
-        scale={0.49}
+        scale={0.7}
       />
       <mesh
         castShadow
@@ -49,7 +385,7 @@ export function Dav(props) {
         material={materials["Material.001"]}
         position={[0.01, -0.03, 0.31]}
         rotation={[Math.PI / 2, 0, -Math.PI / 2]}
-        scale={0.38}
+        scale={0.7}
       />
       <mesh
         castShadow
@@ -58,7 +394,7 @@ export function Dav(props) {
         material={materials["Material.001"]}
         position={[0.22, 0.01, -0.17]}
         rotation={[Math.PI / 2, 0, -Math.PI / 2]}
-        scale={0.52}
+        scale={0.7}
       />
       <group position={[0, -0.01, 0]}>
         <mesh
@@ -84,4 +420,4 @@ export function Dav(props) {
   );
 }
 
-useGLTF.preload("/3D JEKYLL.gltf");
+useGLTF.preload("/5D JEKYLL.gltf");
